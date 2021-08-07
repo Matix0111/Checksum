@@ -5,7 +5,7 @@ import os
 import hashlib
 from hmac import compare_digest
 
-os.chdir(os.getcwd())
+os.chdir(os.getcwd()) # For if script is placed in /usr/bin or something similar. That way there's no need for full paths when using
 
 def getArgs():
     parser = argparse.ArgumentParser()
